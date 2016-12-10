@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	static_libs	# static library
-#
+
 Summary:	C++ binding for the gtkspell library
 Summary(pl.UTF-8):	Interfejs C++ do biblioteki gtkspell
 Name:		gtkspellmm
@@ -73,6 +73,9 @@ Biblioteka statyczna gtkspellmm.
 Summary:	gtkspellmm API documentation
 Summary(pl.UTF-8):	Dokumentacja API gtkspellmm
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 gtkspellmm API documentation.
@@ -97,7 +100,6 @@ CXXFLAGS="%{rpmcxxflags} -std=c++0x"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
