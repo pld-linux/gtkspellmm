@@ -6,7 +6,7 @@ Summary:	C++ binding for the gtkspell library
 Summary(pl.UTF-8):	Interfejs C++ do biblioteki gtkspell
 Name:		gtkspellmm
 Version:	3.0.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	http://downloads.sourceforge.net/gtkspell/%{name}-%{version}.tar.xz
@@ -17,7 +17,7 @@ BuildRequires:	automake >= 1:1.9
 BuildRequires:	glibmm-devel >= 2.16
 BuildRequires:	gtk+3-devel >= 3.0
 BuildRequires:	gtkmm3-devel >= 3.0
-BuildRequires:	gtkspell3-devel >= 3.0
+BuildRequires:	gtkspell3-devel >= 3.0.9
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libstdc++-devel >= 6:4.3
 BuildRequires:	libtool >= 2:1.5
@@ -26,6 +26,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	glibmm >= 2.16
+Requires:	gtkspell3 >= 3.0.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,7 +48,7 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	glibmm-devel >= 2.16
 Requires:	gtk+3-devel >= 3.0
 Requires:	gtkmm3-devel >= 3.0
-Requires:	gtkspell3-devel >= 3.0
+Requires:	gtkspell3-devel >= 3.0.9
 Requires:	libstdc++-devel >= 6:4.3
 
 %description devel
