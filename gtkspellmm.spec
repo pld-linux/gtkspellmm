@@ -7,7 +7,6 @@ Summary(pl.UTF-8):	Interfejs C++ do biblioteki gtkspell
 Name:		gtkspellmm
 Version:	3.0.5
 Release:	1
-Epoch:		1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	http://downloads.sourceforge.net/gtkspell/%{name}-%{version}.tar.xz
@@ -44,7 +43,7 @@ Jest to część projektu wiązań C++ dla GNOME <http://www.gtkmm.org/>.
 Summary:	Header files for gtkspellmm
 Summary(pl.UTF-8):	Pliki nagłówkowe dla gtkspellmm
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 Requires:	glibmm-devel >= 2.16
 Requires:	gtk+3-devel >= 3.0
 Requires:	gtkmm3-devel >= 3.0
@@ -61,7 +60,7 @@ Pliki nagłówkowe dla gtkspellmm.
 Summary:	Static gtkspellmm library
 Summary(pl.UTF-8):	Biblioteka statyczna gtkspellmm
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static gtkspellmm library.
