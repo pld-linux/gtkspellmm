@@ -73,9 +73,7 @@ Biblioteka statyczna gtkspellmm.
 Summary:	gtkspellmm API documentation
 Summary(pl.UTF-8):	Dokumentacja API gtkspellmm
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 gtkspellmm API documentation.
