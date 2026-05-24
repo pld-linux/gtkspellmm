@@ -6,7 +6,7 @@ Summary:	C++ binding for the gtkspell library
 Summary(pl.UTF-8):	Interfejs C++ do biblioteki gtkspell
 Name:		gtkspellmm
 Version:	3.0.5
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	http://downloads.sourceforge.net/gtkspell/%{name}-%{version}.tar.xz
